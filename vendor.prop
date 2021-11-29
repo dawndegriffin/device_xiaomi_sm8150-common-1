@@ -39,7 +39,6 @@ ro.vendor.audio.soundtrigger.gmm.level=50
 ro.vendor.audio.soundtrigger.gmm.user.adsp.level=10
 ro.vendor.audio.soundtrigger.gmm.user.level=10
 ro.vendor.audio.soundtrigger.lowpower=true
-ro.vendor.audio.soundtrigger=sva
 ro.vendor.audio.soundtrigger.training.level=50
 ro.vendor.audio.soundtrigger.vop.adsp.level=10
 ro.vendor.audio.soundtrigger.vop.level=10
@@ -59,6 +58,7 @@ ro.vendor.audio.soundtrigger.xatx.gmm.user.level.medium=10
 ro.vendor.audio.soundtrigger.xatx.vop.level.high=10
 ro.vendor.audio.soundtrigger.xatx.vop.level.low=10
 ro.vendor.audio.soundtrigger.xatx.vop.level.medium=10
+ro.vendor.audio.soundtrigger=sva
 ro.vendor.audio.spk.clean=true
 ro.vendor.audio.spk.stereo=true
 ro.vendor.audio.surround.support=true
@@ -75,10 +75,7 @@ vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.enable.mirrorlink=false
 vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio.hal.boot.timeout.ms=20000
-vendor.audio_hal.in_period_size=144
 vendor.audio.hal.output.suspend.supported=false
-vendor.audio_hal.period_multiplier=3
-vendor.audio_hal.period_size=192
 vendor.audio.hw.aac.encoder=false
 vendor.audio.offload.buffer.size.kb=32
 vendor.audio.offload.gapless.enabled=true
@@ -94,6 +91,9 @@ vendor.audio.usb.disable.sidetone=true
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
+vendor.audio_hal.in_period_size=144
+vendor.audio_hal.period_multiplier=3
+vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=false
 
 # Bluetooth
@@ -102,8 +102,8 @@ persist.bluetooth.a2dp_offload.disabled=false
 persist.vendor.bt.a2dp.mac_whitelist=false
 persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
 persist.vendor.bt.aac_frm_ctl.enabled=false
-persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
 persist.vendor.btsatck.absvolfeature=true
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
 persist.vendor.btstack.connect.peer_earbud=false
 persist.vendor.btstack.enable.splita2dp=true
 persist.vendor.btstack.enable.twsplus=false
@@ -126,8 +126,8 @@ vendor.qcom.bluetooth.soc=cherokee
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,org.lineageos.snap
 
 # Crypto
-ro.crypto.volume.filenames_mode=aes-256-cts
 ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.filenames_mode=aes-256-cts
 ro.crypto.volume.metadata.method=dm-default-key
 
 # Dalvik
@@ -139,9 +139,9 @@ dalvik.vm.heapstartsize=8m
 dalvik.vm.heaptargetutilization=0.75
 
 # Display
-ro.vendor.display.ad=1
-ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
 ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
+ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
+ro.vendor.display.ad=1
 ro.vendor.display.default_fps=60
 ro.vendor.display.sensortype=2
 vendor.display.comp_mask=0
@@ -206,10 +206,10 @@ persist.vendor.qcomsysd.enabled=1
 
 # Radio
 persist.data.df.iwlan_mux=9
-persist.radio.dynamic_sar=false
-persist.radio.multisim.config=dsds
 persist.radio.NO_STAPA=1
 persist.radio.VT_HYBRID_ENABLE=1
+persist.radio.dynamic_sar=false
+persist.radio.multisim.config=dsds
 persist.rcs.otp_sms_port=0
 persist.rcs.supported=1
 persist.vendor.data.iwlan.enable=true
@@ -244,8 +244,8 @@ vendor.usb.use_ffs_mtp=0
 
 # WFD
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
-ro.surface_flinger.max_virtual_display_dimension=4096
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.surface_flinger.max_virtual_display_dimension=4096
 
 # WiFi
 wifi.aware.interface=wifi-aware0
