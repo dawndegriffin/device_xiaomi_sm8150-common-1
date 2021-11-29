@@ -157,7 +157,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
 PRODUCT_PACKAGES += \
-    Snap
+    CameraGo
 
 # Consumer IR
 PRODUCT_PACKAGES += \
